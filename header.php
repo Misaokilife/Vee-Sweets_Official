@@ -17,7 +17,7 @@
     <?php wp_body_open(); ?>
 
         <header> 
-            // 特定のページにスタイルを追加
+            <!-- 特定のページにスタイルを追加 -->
             <div class="site-icon <?php if (is_page('company-data')) { echo 'co-data-icon'; } ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/site_logo.png" alt="Vee-Sweets Site icon">
             </div>

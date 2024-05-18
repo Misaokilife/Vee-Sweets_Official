@@ -25,8 +25,14 @@
                     ぜひ、私たちのスイーツで、つながる笑顔の美味しさをお楽しみください。
                 </p>
 
+                <?php
+                    // 固定ページのIDを設定します
+                    $page_id = 12; // 固定ページのIDを設定
+                    $page_url = get_permalink($page_id);
+                ?>
+
                 <div class="button-container">
-                    <a href="<?php the_permalink(); ?>" class="narrow-btn">Company Data</a>
+                    <a href="<?php echo esc_url($page_url); ?>" class="narrow-btn">Company Data</a>
                 </div>
             </div>
 
