@@ -225,7 +225,18 @@ header {
     line-height: 1.59;
 }
 
-.contact-btn {
+a.contact-btn {
+    display: inline-block !important;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal; /* デフォルトの行の高さをリセット */
+}
+
+body .contact-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     width: 450px;
     height: 100px;
     background-color: #595959;
@@ -238,7 +249,7 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease; /* 色と背景色の変化にアニメーションを追加 */
 }
 
-.contact-btn:hover {
+body .contact-btn:hover {
     background-color: #7c7c7c;
     color: #e0e0e0; /* ホバー時のテキスト色を薄灰色に変更 */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -709,4 +720,22 @@ footer {
     }
 }
 
+/* Contactページ */
 
+.form-container {
+    max-width: 600px; /* フォームの最大幅 */
+    margin: 80px auto; /* 自動マージンで中央揃え */
+    padding: 20px; /* フォームの周りにパディングを追加 */
+    background-color: #ffffff; /* 背景色（オプション） */
+    border-radius: 10px; /* 角を丸くする（オプション） */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ボックスシャドウ（オプション） */
+}
+
+/* レスポンシブデザインの調整 */
+@media (max-width: 430px) {
+    .form-container {
+        padding: 20px; 
+        margin: 60px 40px;
+        background-color: #ffffff;
+    }
+}
