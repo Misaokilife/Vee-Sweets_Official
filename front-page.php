@@ -1,7 +1,17 @@
 <?php get_header(); ?>
     <main>
         <section class="main-visual">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/main-visual.jpg" alt="Main Visual">
+            <ul class="slider">
+                <li class="slider-item">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual.jpg" alt="Main Visual">
+                </li>
+                <li class="slider-item slider-item01">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual.jpg" alt="Main Visual">
+                </li>
+                <li class="slider-item slider-item02">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual.jpg" alt="Main Visual">
+                </li>
+            </ul>
         </section>
 
         <section class="article">
@@ -37,10 +47,10 @@
             </div>
 
             <div class="image-container">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icecream-1.png" alt="soy base Ice cream" class="responsive-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icecream-2.png" alt="soy base Ice cream" class="responsive-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icecream-3.png" alt="soy base Ice cream" class="responsive-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icecream-4.png" alt="soy base Ice cream" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream-1.png" alt="soy base Ice cream" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream-2.png" alt="soy base Ice cream" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream-3.png" alt="soy base Ice cream" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream-4.png" alt="soy base Ice cream" class="responsive-image">
             </div>
         </section>
 
@@ -63,10 +73,10 @@
             </div>
 
             <div class="image-container">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/japanese_ingredients-1.png" alt="Japanese domestic ingredients" class="responsive-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/japanese_ingredients-2.png" alt="Japanese domestic ingredients" class="responsive-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/japanese_ingredients-3.png" alt="Japanese domestic ingredients" class="responsive-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/japanese_ingredients-4.png" alt="Japanese domestic ingredients" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/japanese_ingredients-1.png" alt="Japanese domestic ingredients" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/japanese_ingredients-2.png" alt="Japanese domestic ingredients" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/japanese_ingredients-3.png" alt="Japanese domestic ingredients" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/japanese_ingredients-4.png" alt="Japanese domestic ingredients" class="responsive-image">
             </div>
 
             <hr class="custom-divider divider-margin" />

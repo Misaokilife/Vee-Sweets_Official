@@ -52,6 +52,11 @@
                         <div class="category-content">スイーツ全般</div>
                     </div>
                 </div>
+
+                <div class="home-return">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップページへ</a>
+                </div>
+
             </section>               
         </main>
 

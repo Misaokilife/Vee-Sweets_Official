@@ -55,6 +55,8 @@ header {
     height: calc(100vw * (843 / 1500));
     max-height: 843px;
     margin: 60px auto 110px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .main-visual img {
@@ -62,6 +64,100 @@ header {
     height: auto;
     display: block;
 }
+
+ /* カルーセル用のスタイル */
+
+.slider {  
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-item {
+    flex: 0 0 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 矢印の設定 */
+.slick-prev, .slick-next {
+    display: block !important;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    height: 25px;
+    width: 25px;
+}
+
+.slick-prev::before, .slick-next::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: solid #aaa;
+    border-width: 0 2px 2px 0;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-prev::before {
+    transform: rotate(135deg);
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-next::before {
+    transform: rotate(-45deg);
+}
+
+/* ドットナビゲーションの設定 */
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background: #aaa;
+    border: 1px solid #aaa;
+}
+
+.slick-dots .slick-active button {
+    background: #555;
+    border: 1px solid #555;
+}
+
+/* 本文 */
 
 .article {
     display: flex; 
@@ -738,4 +834,12 @@ footer {
         margin: 60px 40px;
         background-color: #ffffff;
     }
+}
+
+/* トップページへ戻るリンク */
+
+.home-return {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
