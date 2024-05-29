@@ -11,12 +11,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()) . '/style.css'; ?>" media="all" type="text/css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQueryの読み込み -->
         <?php wp_head(); ?>
     </head>
 
     <body>
     <?php wp_body_open(); ?>
-
         <header> 
             <!-- ハンバーガーメニュー -->
             <div class="hamburger-menu">
@@ -30,6 +30,7 @@
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">Company Data</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="#" class="back-to-top">トップへ戻る</a></li>
                     </ul>
                 </nav>
             </div>

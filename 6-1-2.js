@@ -1,4 +1,17 @@
-$(document).ready(function(){
+$(document).ready(function() {
+    $('.menu-btn').click(function() {
+        // ナビゲーションメニューの開閉
+        $('.nav-menu').toggleClass('open');
+        // メニューボタンの3本線とバツ印の切り替え
+        $('.menu-btn').toggleClass('cross');
+    });
+
+    // トップへ戻るボタン
+    $('.back-to-top').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+
     if (typeof $.fn.slick === 'undefined') {
         console.error('Slick is not loaded properly');
     } else {
@@ -32,3 +45,4 @@ $(document).ready(function(){
     });
 
 });
+
