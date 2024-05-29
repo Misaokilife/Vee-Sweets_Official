@@ -23,9 +23,14 @@ header {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+/* サイトアイコン */
 .site-icon{
     width: 730px;
     height: 113.38px;
@@ -45,6 +50,74 @@ header {
 .site-icon img {
     transform: translateX(calc(-50% - 62.5px));/* 自身の幅の半分だけ左に移動後、62.5px右にズレる */
 }
+
+/* ハンバーガーメニュースタイル */
+.hamburger-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #333;
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-btn.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.nav-menu.slick-active {
+    display: block;
+}
+
 
 /* ＜main＞開始 */
 
@@ -597,9 +670,9 @@ footer p {
     }
 
     .contact-btn {
-        max-width: 430px;
-        width: calc(100% * (336 / 430));
-        height: 70px;
+        max-width: 430px !important;
+        width: calc(100% * (336 / 430)) !important;
+        height: 70px !important;
         font-size: 22px;
         line-height: 31px;
         margin: 0;
@@ -843,3 +916,5 @@ footer {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
+

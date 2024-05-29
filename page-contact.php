@@ -10,10 +10,6 @@
                 <?php echo do_shortcode('[wpforms id="14"]'); ?>
             </div>
 
-            <div class="home-return">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップページへ</a>
-            </div>
-
         </main>
 
         <?php get_footer(); ?>  

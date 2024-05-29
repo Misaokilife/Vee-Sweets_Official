@@ -3,13 +3,13 @@
         <section class="main-visual">
             <ul class="slider">
                 <li class="slider-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual.jpg" alt="Main Visual">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual-1.png" alt="Main Visual carousel 1">
                 </li>
                 <li class="slider-item slider-item01">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual.jpg" alt="Main Visual">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual-2.png" alt="Main Visual carousel 2">
                 </li>
                 <li class="slider-item slider-item02">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual.jpg" alt="Main Visual">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/main-visual-3.png" alt="Main Visual carousel 3">
                 </li>
             </ul>
         </section>
@@ -47,10 +47,10 @@
             </div>
 
             <div class="image-container">
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream-1.png" alt="soy base Ice cream" class="responsive-image">
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream-2.png" alt="soy base Ice cream" class="responsive-image">
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream-3.png" alt="soy base Ice cream" class="responsive-image">
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream-4.png" alt="soy base Ice cream" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream_1.png" alt="soy base Ice cream" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream_2.png" alt="soy base Ice cream" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream_3.png" alt="soy base Ice cream" class="responsive-image">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icecream_4.png" alt="soy base Ice cream" class="responsive-image">
             </div>
         </section>
 

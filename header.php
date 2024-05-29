@@ -18,8 +18,23 @@
     <?php wp_body_open(); ?>
 
         <header> 
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger-menu">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">Company Data</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
             <!-- 特定のページにスタイルを追加 -->
             <div class="site-icon <?php if (is_page('company-data')) { echo 'co-data-icon'; } ?>">
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/site_logo.png" alt="Vee-Sweets Site icon">
+                <a href="<?php echo home_url(); ?>" id="logo"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/site_logo.png" alt="Vee-Sweets Site icon"></a>
             </div>
         </header>
