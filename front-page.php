@@ -84,7 +84,7 @@
 
         <section class="contact">
             <p class="contact-text">商品やサービスに関するお問合せ、ご注文に関してのお問合せはこちら</p>
-            <a href="http://localhost/VeeSweets-local/contact-us/" class="contact-btn">お問合せ</a>
+            <a href="<?php echo esc_url(home_url('/contact-us/')); ?>" class="contact-btn">お問合せ</a>
             <a href="mailto:info@vee-sweets.com" class="contact-mail">info@vee-sweets.com</a>
             <p class="contact-person">担当：島原</p>
         </section>

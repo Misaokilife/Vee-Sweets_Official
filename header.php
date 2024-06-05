@@ -27,10 +27,9 @@
                 </div>
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">Company Data</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#" class="back-to-top">トップへ戻る</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/')); ?>">HOME</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/company-data')); ?>">Company Data</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/contact-us')); ?>">Contact</a></li>
                     </ul>
                 </nav>
             </div>
