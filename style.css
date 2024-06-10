@@ -160,8 +160,6 @@ header {
 
 /* ＜main＞開始 */
 
-
-
 .main-visual {
     position: relative;
     width: 100vw;
@@ -179,7 +177,7 @@ header {
     display: block;
 }
 
- /* カルーセル用のスタイル */
+/* カルーセル用のスタイル */
 
 .slider {  
     position: relative;
@@ -248,6 +246,7 @@ header {
     bottom: 10px;
     width: 100%;
     text-align: center;
+    z-index: 2;
 }
 
 .slick-dots li {
@@ -258,17 +257,19 @@ header {
 .slick-dots button {
     color: transparent;
     outline: none;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     display: block;
     border-radius: 50%;
     background: #aaa;
     border: 1px solid #aaa;
+    z-index: 3;
 }
 
 .slick-dots .slick-active button {
     background: #555;
     border: 1px solid #555;
+    z-index: 3;
 }
 
 /* 本文 */
@@ -517,13 +518,50 @@ footer p {
 @media (max-width: 430px) {
     header {
         height: auto;
+        position: relative;
+        padding-top: 60px;
+    }
+
+    .hamburger-menu {
+        display: block; /* スマホ画面では表示 */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 25px;
+        z-index: 1001; /* サイトアイコンの上に表示 */
+    }
+
+    .menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; /* 中央揃え */
+        width: 25px; /* 幅を指定 */
+        height: auto; /* 高さを自動に設定 */
+        cursor: pointer;
+    }
+
+    .menu-btn span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #333;
+        transition: all 0.3s ease;
+        margin: 4px 0; /* 線の間に隙間を追加 */
+    }
+
+    .nav-menu {
+        display: none; /* 初期状態で非表示 */
+        width: 100%;
+        right: 0;
     }
 
     .site-icon {
         position: relative;
         width: calc(100% * (335.97 / 430));
         height: 52.18px;
-        margin-top: 77px;
+        margin-top: 17px;
         margin-left: auto;
         margin-right: auto;
     }
